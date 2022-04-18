@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+//MARK: - FontBook Protocol
 /// Catalogue of all fonts used in the app
 protocol FontBook: AnyObject {
     /// Avenir 16 heavy
@@ -23,6 +24,7 @@ protocol FontBook: AnyObject {
 
 }
 
+//MARK: - StaticFontBook 
 /// Stores a set of static fonts used in the app
 final class StaticFontBook: FontBook {
     
@@ -35,6 +37,7 @@ final class StaticFontBook: FontBook {
     
 }
 
+//MARK: - AppFontBook Singleton
 /// Provides a single way to get access to the app's font book
 enum AppFontBook {
     static let shared: FontBook = StaticFontBook()

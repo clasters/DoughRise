@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		123C6144280E0885007B219B /* AppPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123C6143280E0885007B219B /* AppPalette.swift */; };
 		129AE72A280DE72D005B6032 /* DoughRiseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129AE729280DE72D005B6032 /* DoughRiseApp.swift */; };
 		129AE72C280DE72D005B6032 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129AE72B280DE72D005B6032 /* ContentView.swift */; };
 		129AE72E280DE72F005B6032 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 129AE72D280DE72F005B6032 /* Assets.xcassets */; };
@@ -15,9 +16,15 @@
 		129AE73C280DF752005B6032 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 129AE73B280DF752005B6032 /* Montserrat-Medium.ttf */; };
 		129AE740280DF7A8005B6032 /* Avenir-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 129AE73F280DF7A8005B6032 /* Avenir-Heavy.ttf */; };
 		129AE743280DFCB6005B6032 /* AppFontBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129AE742280DFCB6005B6032 /* AppFontBook.swift */; };
+		12AE0AF1280E0419001557E6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AE0AF0280E0419001557E6 /* HomeView.swift */; };
+		12AE0AF3280E0424001557E6 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AE0AF2280E0424001557E6 /* HistoryView.swift */; };
+		12AE0AF5280E0435001557E6 /* TransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AE0AF4280E0435001557E6 /* TransactionsView.swift */; };
+		12AE0AF7280E0443001557E6 /* GoalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AE0AF6280E0443001557E6 /* GoalsView.swift */; };
+		12AE0AF9280E044B001557E6 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AE0AF8280E044B001557E6 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		123C6143280E0885007B219B /* AppPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPalette.swift; sourceTree = "<group>"; };
 		129AE726280DE72D005B6032 /* DoughRise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoughRise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		129AE729280DE72D005B6032 /* DoughRiseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoughRiseApp.swift; sourceTree = "<group>"; };
 		129AE72B280DE72D005B6032 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -28,6 +35,11 @@
 		129AE73B280DF752005B6032 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		129AE73F280DF7A8005B6032 /* Avenir-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Avenir-Heavy.ttf"; sourceTree = "<group>"; };
 		129AE742280DFCB6005B6032 /* AppFontBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFontBook.swift; sourceTree = "<group>"; };
+		12AE0AF0280E0419001557E6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		12AE0AF2280E0424001557E6 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		12AE0AF4280E0435001557E6 /* TransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsView.swift; sourceTree = "<group>"; };
+		12AE0AF6280E0443001557E6 /* GoalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsView.swift; sourceTree = "<group>"; };
+		12AE0AF8280E044B001557E6 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +53,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		123C6145280E2803007B219B /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				12AE0AF0280E0419001557E6 /* HomeView.swift */,
+				12AE0AF2280E0424001557E6 /* HistoryView.swift */,
+				12AE0AF4280E0435001557E6 /* TransactionsView.swift */,
+				12AE0AF6280E0443001557E6 /* GoalsView.swift */,
+				12AE0AF8280E044B001557E6 /* SettingsView.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		123C6146280E281F007B219B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				123C6145280E2803007B219B /* TabBar */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		129AE71D280DE72D005B6032 = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				129AE741280DFCA2005B6032 /* DesignSystem */,
+				123C6146280E281F007B219B /* View */,
 				129AE737280DF72B005B6032 /* Info.plist */,
 				129AE729280DE72D005B6032 /* DoughRiseApp.swift */,
 				129AE72B280DE72D005B6032 /* ContentView.swift */,
@@ -93,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				129AE742280DFCB6005B6032 /* AppFontBook.swift */,
+				123C6143280E0885007B219B /* AppPalette.swift */,
 			);
 			path = DesignSystem;
 			sourceTree = "<group>";
@@ -171,8 +205,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				129AE743280DFCB6005B6032 /* AppFontBook.swift in Sources */,
+				12AE0AF9280E044B001557E6 /* SettingsView.swift in Sources */,
+				12AE0AF1280E0419001557E6 /* HomeView.swift in Sources */,
+				12AE0AF3280E0424001557E6 /* HistoryView.swift in Sources */,
+				123C6144280E0885007B219B /* AppPalette.swift in Sources */,
 				129AE72C280DE72D005B6032 /* ContentView.swift in Sources */,
+				12AE0AF7280E0443001557E6 /* GoalsView.swift in Sources */,
 				129AE72A280DE72D005B6032 /* DoughRiseApp.swift in Sources */,
+				12AE0AF5280E0435001557E6 /* TransactionsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
