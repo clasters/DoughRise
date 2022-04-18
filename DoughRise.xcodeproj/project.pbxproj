@@ -11,6 +11,9 @@
 		129AE72C280DE72D005B6032 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129AE72B280DE72D005B6032 /* ContentView.swift */; };
 		129AE72E280DE72F005B6032 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 129AE72D280DE72F005B6032 /* Assets.xcassets */; };
 		129AE731280DE72F005B6032 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 129AE730280DE72F005B6032 /* Preview Assets.xcassets */; };
+		129AE73A280DF747005B6032 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 129AE739280DF747005B6032 /* Montserrat-SemiBold.ttf */; };
+		129AE73C280DF752005B6032 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 129AE73B280DF752005B6032 /* Montserrat-Medium.ttf */; };
+		129AE740280DF7A8005B6032 /* Avenir-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 129AE73F280DF7A8005B6032 /* Avenir-Heavy.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,10 @@
 		129AE72B280DE72D005B6032 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		129AE72D280DE72F005B6032 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		129AE730280DE72F005B6032 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		129AE737280DF72B005B6032 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		129AE739280DF747005B6032 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		129AE73B280DF752005B6032 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		129AE73F280DF7A8005B6032 /* Avenir-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Avenir-Heavy.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +58,7 @@
 		129AE728280DE72D005B6032 /* DoughRise */ = {
 			isa = PBXGroup;
 			children = (
+				129AE737280DF72B005B6032 /* Info.plist */,
 				129AE729280DE72D005B6032 /* DoughRiseApp.swift */,
 				129AE72B280DE72D005B6032 /* ContentView.swift */,
 				129AE72D280DE72F005B6032 /* Assets.xcassets */,
@@ -62,9 +70,20 @@
 		129AE72F280DE72F005B6032 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				129AE738280DF737005B6032 /* Fonts */,
 				129AE730280DE72F005B6032 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		129AE738280DF737005B6032 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				129AE73F280DF7A8005B6032 /* Avenir-Heavy.ttf */,
+				129AE73B280DF752005B6032 /* Montserrat-Medium.ttf */,
+				129AE739280DF747005B6032 /* Montserrat-SemiBold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +144,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				129AE73A280DF747005B6032 /* Montserrat-SemiBold.ttf in Resources */,
 				129AE731280DE72F005B6032 /* Preview Assets.xcassets in Resources */,
+				129AE73C280DF752005B6032 /* Montserrat-Medium.ttf in Resources */,
 				129AE72E280DE72F005B6032 /* Assets.xcassets in Resources */,
+				129AE740280DF7A8005B6032 /* Avenir-Heavy.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +291,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"DoughRise/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DoughRise/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -297,6 +320,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"DoughRise/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DoughRise/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
