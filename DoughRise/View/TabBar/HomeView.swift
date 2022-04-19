@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct HomeView: View {
+    let budget = MockData.getBudgets()
+    
     var body: some View {
         ScrollView {
             VStack(spacing: 16){
@@ -66,7 +68,8 @@ struct HomeView: View {
                     }
                     
                 }
-                BudgetsView().padding(.horizontal, 6)
+                
+                BudgetsView(budgets: budget).padding(.horizontal, 6)
                 
             }
             

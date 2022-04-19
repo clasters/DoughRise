@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CategoryRow: View {
+    var screenWidth = UIScreen.main.bounds.size.width
     let budget: Budget
     
     var body: some View {
@@ -77,9 +78,11 @@ struct CategoryRow: View {
         }
         .padding(.bottom, 11)
         .padding(.top, 6)
+        .frame(width: (screenWidth - 18) / 2 , height: 148)
         .background(Color(AppPalette.shared.secondaryColor))
         .cornerRadius(10)
         .shadow(radius: 2)
+        
         
     }
 }
