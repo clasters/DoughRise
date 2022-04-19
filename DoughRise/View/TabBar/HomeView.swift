@@ -10,6 +10,7 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         VStack(spacing: 16){
+            //MARK: - NavBar
             HStack(alignment: .center, spacing: 0){
                 Spacer()
                 HStack{
@@ -30,7 +31,13 @@ struct HomeView: View {
                 .font((Font(AppFontBook.shared.largeTitle)))
             
             VStack{
-                RoundedRectangle(cornerRadius: 10).frame(height: 35).padding(.horizontal, 19)
+                GradientProgressView(
+                    cornerRadius: 10,
+                    height: 35,
+                    gradient: Gradient(colors: [Color(AppPalette.shared.budgetGradientStart), Color(AppPalette.shared.budgetGradientEnd)])
+                )
+                .padding(.horizontal, 19)
+                
                 HStack{
                     Text("$6,000 Left")
                         .foregroundColor(Color(AppPalette.shared.mainTextColor))
@@ -58,6 +65,7 @@ struct HomeView: View {
             }
                 
             }
+            CategoryRow(budget: MockData.getBudgets().first!)
             Spacer()
                 
         }
