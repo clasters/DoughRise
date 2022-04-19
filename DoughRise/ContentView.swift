@@ -13,12 +13,12 @@ struct ContentView: View {
             HomeView()
                 .tabItem {
                     Label("Home", image: "Home")
-                        
-                }
+                }.background(Color(AppPalette.shared.backgroundColor))
             
             HistoryView()
                 .tabItem {
                     Label("History", image: "History")
+                        
                 }
             
             TransactionsView()
@@ -37,6 +37,8 @@ struct ContentView: View {
                 }
             
         }
+        .accentColor(Color(AppPalette.shared.accentColor))
+            
     }
 }
 
