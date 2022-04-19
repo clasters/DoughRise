@@ -69,14 +69,15 @@ struct CategoryRow: View {
                                 .foregroundColor(.green)
                         }
                     }
-                    Image("rent").padding(2)
-                }}
-            
+                    Image(budget.image).padding(2)
+                }
+            }
+            .padding(.bottom, 11)
+            .padding(.top, 6)
         }
-        .frame(width: UIScreen.main.bounds.width / 2, height: UIScreen.main.bounds.width / 2)
         .background(Color(AppPalette.shared.secondaryColor))
         .cornerRadius(10)
-        .shadow(radius: 3)
+        .shadow(radius: 2)
         
     }
 }

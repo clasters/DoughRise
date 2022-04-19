@@ -11,9 +11,9 @@ import Foundation
 class MockData{
    static func getBudgets() -> [Budget]{
         return [
-            Budget(name: "Rent", budget: 900, spent: 250, left: 650, category: .home),
-            Budget(name: "School Loans", budget: 900, spent: 250, left: 650, category: .education),
-            Budget(name: "Eating Out", budget: 900, spent: 250, left: 650, category: .food)
+            Budget(id: 1, name: "Rent", budget: 900, spent: 250, left: 650, category: .home),
+            Budget(id: 2, name: "School Loans", budget: 900, spent: 250, left: 650, category: .education),
+            Budget(id: 3, name: "Eating Out", budget: 900, spent: 250, left: 650, category: .food)
         ]
     }
 }

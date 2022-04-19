@@ -9,7 +9,8 @@ import Foundation
 import SwiftUI
 
 
-struct Budget{
+struct Budget: Identifiable{
+    var id: Int
     let name: String
     let budget: Int
     let spent: Int
@@ -28,7 +29,7 @@ struct Budget{
             case .home:
                 return "rent"
             case .food:
-                return "foor"
+                return "food"
             case .education:
                 return "education"
             }
@@ -49,10 +50,12 @@ struct Budget{
         }
     }
     
+    
+    enum Category{
+        case home
+        case food
+        case education
+    }
+
 }
 
-enum Category{
-    case home
-    case food
-    case education
-}

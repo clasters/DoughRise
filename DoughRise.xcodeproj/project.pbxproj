@@ -9,9 +9,10 @@
 /* Begin PBXBuildFile section */
 		123C6144280E0885007B219B /* AppPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123C6143280E0885007B219B /* AppPalette.swift */; };
 		123C6148280E37F1007B219B /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123C6147280E37F0007B219B /* CategoryRow.swift */; };
-		123C614B280E3B8D007B219B /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123C614A280E3B8D007B219B /* Category.swift */; };
+		123C614B280E3B8D007B219B /* Budget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123C614A280E3B8D007B219B /* Budget.swift */; };
 		123C614D280E4661007B219B /* GradientProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123C614C280E4661007B219B /* GradientProgressView.swift */; };
 		123C614F280E504E007B219B /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123C614E280E504E007B219B /* MockData.swift */; };
+		123C6151280E5315007B219B /* BudgetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123C6150280E5315007B219B /* BudgetsView.swift */; };
 		129AE72A280DE72D005B6032 /* DoughRiseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129AE729280DE72D005B6032 /* DoughRiseApp.swift */; };
 		129AE72C280DE72D005B6032 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129AE72B280DE72D005B6032 /* ContentView.swift */; };
 		129AE72E280DE72F005B6032 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 129AE72D280DE72F005B6032 /* Assets.xcassets */; };
@@ -30,9 +31,10 @@
 /* Begin PBXFileReference section */
 		123C6143280E0885007B219B /* AppPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPalette.swift; sourceTree = "<group>"; };
 		123C6147280E37F0007B219B /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
-		123C614A280E3B8D007B219B /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		123C614A280E3B8D007B219B /* Budget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Budget.swift; sourceTree = "<group>"; };
 		123C614C280E4661007B219B /* GradientProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientProgressView.swift; sourceTree = "<group>"; };
 		123C614E280E504E007B219B /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		123C6150280E5315007B219B /* BudgetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetsView.swift; sourceTree = "<group>"; };
 		129AE726280DE72D005B6032 /* DoughRise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoughRise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		129AE729280DE72D005B6032 /* DoughRiseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoughRiseApp.swift; sourceTree = "<group>"; };
 		129AE72B280DE72D005B6032 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				123C6145280E2803007B219B /* TabBar */,
 				123C6147280E37F0007B219B /* CategoryRow.swift */,
 				123C614C280E4661007B219B /* GradientProgressView.swift */,
+				123C6150280E5315007B219B /* BudgetsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -86,7 +89,7 @@
 		123C6149280E3B7C007B219B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				123C614A280E3B8D007B219B /* Category.swift */,
+				123C614A280E3B8D007B219B /* Budget.swift */,
 				123C614E280E504E007B219B /* MockData.swift */,
 			);
 			path = Model;
@@ -231,12 +234,13 @@
 				12AE0AF1280E0419001557E6 /* HomeView.swift in Sources */,
 				12AE0AF3280E0424001557E6 /* HistoryView.swift in Sources */,
 				123C6144280E0885007B219B /* AppPalette.swift in Sources */,
+				123C6151280E5315007B219B /* BudgetsView.swift in Sources */,
 				129AE72C280DE72D005B6032 /* ContentView.swift in Sources */,
 				123C614D280E4661007B219B /* GradientProgressView.swift in Sources */,
 				12AE0AF7280E0443001557E6 /* GoalsView.swift in Sources */,
 				129AE72A280DE72D005B6032 /* DoughRiseApp.swift in Sources */,
 				12AE0AF5280E0435001557E6 /* TransactionsView.swift in Sources */,
-				123C614B280E3B8D007B219B /* Category.swift in Sources */,
+				123C614B280E3B8D007B219B /* Budget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

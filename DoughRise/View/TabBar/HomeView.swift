@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
+        ScrollView {
         VStack(spacing: 16){
             //MARK: - NavBar
             HStack(alignment: .center, spacing: 0){
@@ -65,12 +66,11 @@ struct HomeView: View {
             }
                 
             }
-            CategoryRow(budget: MockData.getBudgets().first!)
-            Spacer()
+            BudgetsView().padding(.horizontal, 6)
                 
         }
        
-    }
+        }}
 }
 
 struct HomeView_Previews: PreviewProvider {
